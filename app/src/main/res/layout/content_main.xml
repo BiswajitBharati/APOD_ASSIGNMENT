@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/teal_700"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_text_view"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/empty_apod_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/empty_apod_text"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:text="@string/empty_apod"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/title_header_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_text_view"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_header_view"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:text="@string/title"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintBottom_toTopOf="@+id/title_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_apod_text"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_text_view"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:visibility="gone"
+            android:justificationMode="inter_word"
+            app:layout_constraintBottom_toTopOf="@+id/explanation_header_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_header_view"
+            tools:ignore="UnusedAttribute" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/explanation_header_view"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:text="@string/explanation"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintBottom_toTopOf="@+id/explanation_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text_view"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/explanation_text_view"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:visibility="gone"
+            android:justificationMode="inter_word"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/explanation_header_view"
+            tools:ignore="UnusedAttribute" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

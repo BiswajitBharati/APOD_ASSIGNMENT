@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Goldman Sachs APOD</string>
+    <string name="favourite">Favourite</string>
+
+    <string name="empty_apod">No cached APOD information available. Hit the Search Button and choose the date to get your first APOD!</string>
+
+    <string name="title">Title</string>
+    <string name="explanation">Explanation</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_favourites">Favourites</string>
+    <string name="action_all">All</string>
+    <string name="action_fav">Fav</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
